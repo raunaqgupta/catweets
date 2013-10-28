@@ -1,0 +1,62 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #eee;
+}
+#tweet {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0;
+  outline: none;
+  width: 400px;
+  height: 200px;
+  margin-left: -200px;
+  left: 50%;
+  top: 30%;
+}
+#tweet #info {
+  list-style: none;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin: 0;
+  background-color: #ddd;
+  width: 100%;
+  height: 30px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+#tweet #text {
+  font-size: 1.2em;
+  margin: 1em;
+  padding-top: 8px;
+  padding-left: 10px;
+}
+#tweet #text #handle {
+  font-weight: bold;
+}
+#tweet #notch {
+  position: absolute;
+  left: 100%;
+  top: 40px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+}
+#kat {
+  position: fixed;
+  top: 50%;
+  left: 65%;
+  margin-top: -135px;
+  width: 200px;
+  height: 270px;
+}
+#kat img {
+  width: 100%;
+}

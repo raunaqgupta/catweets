@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/vendor/jquery-1.10.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src='/javascripts/main.js'></script>
+  </head>
+  <body>
+    <div id="tweet">
+      <ul id="info">
+        <li id="handle"></li>
+      </ul>
+      <p id="text"></p>
+      <div id="notch"></div>
+    </div>
+    <div id="kat">
+      <img src="http://highparkcatsitting.com/wp-content/uploads/2012/11/Cat-Sitting-22.png"></img>
+    </div>
+  </body>
+</html>
