@@ -16,6 +16,8 @@ var TwitterStream = function(io){
     });
   });
 
+  // return last tweet fetched from the stream
+  // useful for quick tweet push for new clients
   this.getLastTweet = function() {
     return last_tweet;
   };
