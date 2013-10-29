@@ -10,15 +10,15 @@ body {
 }
 #tweet {
   position: absolute;
-  background-color: #fff;
-  border-radius: 4px;
   padding: 0;
   outline: none;
-  width: 400px;
-  height: 200px;
   margin-left: -200px;
   left: 50%;
   top: 30%;
+  background-color: #fff;
+  width: 400px;
+  height: 200px;
+  border-radius: 4px;
 }
 #tweet #info {
   list-style: none;
@@ -40,10 +40,10 @@ body {
 #tweet #text #handle {
   font-weight: bold;
 }
-#tweet #notch {
+#notch {
   position: absolute;
-  left: 100%;
-  top: 40px;
+  left: 64.6%;
+  top: 37%;
   border-top: 10px solid transparent;
   border-right: 10px solid transparent;
   border-left: 10px solid #fff;

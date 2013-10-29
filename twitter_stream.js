@@ -7,12 +7,13 @@ var twit = new twitter({
   access_token_secret: twitter_keys.access_token_secret
 });
 var last_tweet;
+var tweet_queue = [];
 
-var TwitterStream = function(io){
+var TwitterStream = function(){
   twit.stream('statuses/filter', {'track':'#cat'}, function(stream) {
     stream.on('data', function (data) {
       last_tweet = data;
-      io.sockets.emit('tweet', data);
+      tweet_queue.push(data);
     });
   });
 
@@ -20,6 +21,12 @@ var TwitterStream = function(io){
   // useful for quick tweet push for new clients
   this.getLastTweet = function() {
     return last_tweet;
+  };
+
+  this.getTweet = function(io) {
+    if(tweet_queue.length > 0) {
+      io.sockets.emit('tweet', tweet_queue.shift());
+    }
   };
 };
 

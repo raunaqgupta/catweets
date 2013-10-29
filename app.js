@@ -5,7 +5,7 @@ var http = require('http');
 var path = require('path');
 var app = express();
 var server = http.createServer(app);
-var io = require('socket.io').listen(server);
+var io = require('socket.io').listen(server, {log: false});
 var TwitterStream = require('./twitter_stream');
 
 // all environments
@@ -35,7 +35,11 @@ io.configure(function(){
 });
 
 // setup twitter stream
-var twitter_stream = new TwitterStream(io);
+var twitter_stream = new TwitterStream();
+
+setInterval(function(){
+  twitter_stream.getTweet(io);
+}, 2000);
 
 // on new client connections
 io.sockets.on('connection', function(socket){

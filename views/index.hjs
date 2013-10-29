@@ -13,8 +13,8 @@
         <li id="handle"></li>
       </ul>
       <p id="text"></p>
-      <div id="notch"></div>
     </div>
+    <div id="notch"></div>
     <div id="kat">
       <img src="http://highparkcatsitting.com/wp-content/uploads/2012/11/Cat-Sitting-22.png"></img>
     </div>
