@@ -3,12 +3,35 @@
 *:after {
   box-sizing: border-box;
 }
+html,
 body {
-  padding: 50px;
+  height: 100%;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #eee;
 }
-#tweet {
+#title {
+  position: absolute;
+  background-color: #fff;
+  width: 110px;
+  height: 54px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0;
+  margin-top: 5px;
+  left: 50%;
+  margin-left: -55px;
+}
+#title img {
+  width: 50px;
+  height: 50px;
+}
+#cat_tweet {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+}
+#cat_tweet #tweet {
   position: absolute;
   padding: 0;
   outline: none;
@@ -20,7 +43,7 @@ body {
   height: 200px;
   border-radius: 4px;
 }
-#tweet #info {
+#cat_tweet #tweet #info {
   list-style: none;
   padding-left: 10px;
   padding-top: 5px;
@@ -31,16 +54,16 @@ body {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-#tweet #text {
+#cat_tweet #tweet #text {
   font-size: 1.2em;
   margin: 1em;
   padding-top: 8px;
   padding-left: 10px;
 }
-#tweet #text #handle {
+#cat_tweet #tweet #text #handle {
   font-weight: bold;
 }
-#notch {
+#cat_tweet #notch {
   position: absolute;
   left: 64.6%;
   top: 37%;
@@ -49,14 +72,53 @@ body {
   border-left: 10px solid #fff;
   border-bottom: 10px solid transparent;
 }
-#kat {
-  position: fixed;
+#cat_tweet #kat {
+  position: absolute;
   top: 50%;
   left: 65%;
   margin-top: -135px;
   width: 200px;
   height: 270px;
 }
-#kat img {
+#cat_tweet #kat img {
   width: 100%;
+}
+#cat_tweet #map_pointer {
+  position: absolute;
+  top: 95.5%;
+  left: 46%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #fff;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+#map {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+}
+#map #map_background {
+  position: absolute;
+  border-top: 2px solid #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0.5;
+}
+#map #stats_pointer {
+  position: absolute;
+  top: 95.5%;
+  left: 46%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #fff;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
 }

@@ -3,20 +3,39 @@
   <head>
     <title>{{ title }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div id="title">
+      <img src="images/cat.jpg"></img>
+      <img src="images/twitter-bird.png"></img>
+    </div>
+    <div id="cat_tweet">
+      <div id="tweet">
+        <ul id="info">
+          <li id="handle"></li>
+        </ul>
+        <p id="text"></p>
+      </div>
+      <div id="notch"></div>
+      <div id="kat">
+        <img src="/images/Cat-Sitting-22.png"></img>
+      </div>
+      <div id="map_pointer">Cat Map</div>
+    </div>
+    <div id="map">
+      <div id="map_background"></div>
+      <div id="stats_pointer">Stats</div>
+    </div>
+
+    <!-- map -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp0y-YTYzsrysRXXNoyJm_7e_REnCMmP4&sensor=true">
+    </script>
+
+    <!-- scripts -->
     <script src="/javascripts/vendor/jquery-1.10.1.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src='/javascripts/main.js'></script>
-  </head>
-  <body>
-    <div id="tweet">
-      <ul id="info">
-        <li id="handle"></li>
-      </ul>
-      <p id="text"></p>
-    </div>
-    <div id="notch"></div>
-    <div id="kat">
-      <img src="http://highparkcatsitting.com/wp-content/uploads/2012/11/Cat-Sitting-22.png"></img>
-    </div>
+    <script src='/javascripts/onload.js'></script>
   </body>
 </html>

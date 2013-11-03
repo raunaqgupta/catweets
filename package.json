@@ -10,7 +10,8 @@
     "hjs": "*",
     "stylus": "*",
     "socket.io": "~0.9.16",
-    "ntwitter": "0.5.0"
+    "ntwitter": "0.5.0",
+    "geocoder": "~0.1.0"
   },
   "engines": {
     "node": "0.10.21",
